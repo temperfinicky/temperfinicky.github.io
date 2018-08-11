@@ -1,0 +1,580 @@
+/*
+  Theme Name: Avilon
+  Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: cornflowerblue;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: cornflowerblue;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 60%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: cornflowerblue;
+  color: #fff;
+  padding: 2px 20px 8px 20px;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0;
+  right: 15px;
+  bottom: 0;
+  opacity: 0.8;
+  transition: opacity 500ms linear;
+  z-index: 1010;
+}
+
+.back-to-top:hover {
+  background: cornflowerblue;
+  color: #fff;
+  opacity: 1.0;
+}
+
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/intro.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  #intro {
+    background-attachment: fixed;
+  }
+}
+
+#intro .intro-text {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  right: 0;
+  height: calc(50% - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  z-index: 20;
+}
+
+#intro .intro-nav {
+  position: absolute;
+  left: 0;
+  top: 85%;
+  right: 0;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#intro h2 {
+  margin: 30px 0 10px 0;
+  padding: 0 15px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  color: #fff;
+}
+
+#intro h3 {
+  margin: -20px 0 0 0; /* top right bottom left */
+  padding: 0 60px 0 0; /* top right bottom left */
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #intro h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  #intro h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #intro h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  #intro h3 {
+    display: none;
+  }
+}
+
+#intro p {
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #intro p {
+    font-size: 18px;
+  }
+}
+
+#intro .btn-get-started {
+  display: inline-block;
+  padding: 28px 28px;
+  opacity: 0.6;
+  transition: opacity 500ms linear;
+  z-index: 110;
+}
+
+#intro .btn-get-started:hover {
+  opacity: 1.0;
+}
+
+
+#intro .protagonists {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100%; /* determines how high the elements below "fly" */
+}
+
+#intro .protagonists .temper {
+  position: absolute;
+  z-index: 20;
+  left: calc(50% - 210px);
+  bottom: 22%;
+}
+
+#intro .protagonists .finicky {
+  position: absolute;
+  z-index: 30;
+  left: calc(50% + 70px);
+  bottom: 22%;
+}
+
+#intro .protagonists .fire {
+  position: absolute;
+  z-index: 40;
+  left: calc(50% - 50px);
+  bottom: 19%;
+}
+
+#intro .protagonists .tent {
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 200px);
+  bottom: 40%;
+}
+
+@media (max-width: 768px) {
+  #intro .protagonists .temper, #intro .protagonists .finicky, #intro .protagonists .fire {
+    display: none;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 32px;
+  color: #111; /*font color of titles*/
+  text-align: center;
+  font-weight: 500;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 0px;
+  color: #444; /*font color of section text*/
+  font-style: italic;
+}
+
+.section-header .section-stats {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #111;
+  font-weight: 600;
+  font-size: 80%;  /* relative size to description text */
+
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+  background: #eff5f5;
+}
+
+/* Te Araroa Section
+--------------------------------*/
+#te-araroa {
+  background: rgb(253, 253, 251);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#te-araroa .te-araroa-map {
+  height: 80vh;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 5px; /*NOTE: used to ensure consistent width with gallery items below*/
+}
+
+#te-araroa .te-araroa-map-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: 401; /* leaflet map has a z-index of 400 hardcoded */
+  pointer-events: none; /* enables click-events to be passed to the underlying map layer */
+}
+
+#te-araroa .gallery-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#te-araroa .gallery-item {
+  overflow: hidden;
+  position: relative;
+  margin: 5px; /*NOTE: if padding is used instead, the scale transform on hover below breaks*/
+  vertical-align: middle;
+  text-align: center;
+}
+
+#te-araroa .gallery-item img {
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#te-araroa .gallery-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#te-araroa .gallery-item:hover .gallery-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#te-araroa h3 {
+  font-size: 28px;
+}
+
+#te-araroa h4 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+#te-araroa .content p {
+  line-height: 26px;
+}
+
+#te-araroa .content p:last-child {
+  margin-bottom: 0;
+}
+
+#te-araroa .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1dc8cd;
+}
+
+#te-araroa .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#te-araroa .content ul li {
+  padding-bottom: 10px;
+}
+
+
+/* Lofoten Section
+--------------------------------*/
+#lofoten {
+  background: rgb(253, 253, 251);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#lofoten .lofoten-map {
+  height: 80vh;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 5px; /*NOTE: used to ensure consistent width with gallery items below*/
+}
+
+#lofoten .lofoten-map-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: 401; /* leaflet map has a z-index of 400 hardcoded */
+  pointer-events: none; /* enables click-events to be passed to the underlying map layer */
+}
+
+#lofoten .gallery-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#lofoten .gallery-item {
+  overflow: hidden;
+  position: relative;
+  margin: 5px; /*NOTE: if padding is used instead, the scale transform on hover below breaks*/
+  vertical-align: middle;
+  text-align: center;
+}
+
+#lofoten .gallery-item img {
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#lofoten .gallery-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#lofoten .gallery-item:hover .gallery-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#lofoten h3 {
+  font-size: 28px;
+}
+
+#lofoten h4 {
+  font-size: 24px;
+  font-style: italic;
+}
+#lofoten .content p {
+  line-height: 26px;
+}
+
+#lofoten .content p:last-child {
+  margin-bottom: 0;
+}
+
+#lofoten .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1dc8cd;
+}
+
+#lofoten .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#lofoten .content ul li {
+  padding-bottom: 10px;
+}
+
+
+/* Home Section
+--------------------------------*/
+#home {
+  background: rgb(253, 253, 251);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#home .home-map {
+  height: 80vh;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 5px; /*NOTE: used to ensure consistent width with other maps on associated galleriesw*/
+}
+
+#home .home-map-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* https://css-tricks.com/snippets/css/css-radial-gradient/ */
+  /* background: radial-gradient(farthest-side at 50% 50%, rgba(209,209,209, 0.0), rgba(209,209,209, 1.0)); */
+  /* background: linear-gradient(135deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(to bottom, rgba(253, 253, 251, 1.0), rgba(32, 32, 32, 0.0)); */
+  background-size: cover;
+  z-index: 401; /* leaflet map has a z-index of 400 hardcoded */
+  pointer-events: none; /* enables click-events to be passed to the underlying map layer */
+}
+
+#home h3 {
+  font-size: 28px;
+}
+
+#home h4 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+#home .content p {
+  line-height: 26px;
+}
+
+#home .content p:last-child {
+  margin-bottom: 0;
+}
+
+#home .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1dc8cd;
+}
+
+#home .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#home .content ul li {
+  padding-bottom: 10px;
+}
+
+
+/* Parallax Section Divider
+--------------------------------*/
+#parallax-divider-lofoten {
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(225deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(to bottom, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), url(../img/backgrounds/lofoten.jpg) fixed center center;
+  background-size: cover;
+  padding: 15vh 0;
+}
+
+@media (max-width: 769px) {
+  #parallax-divider-lofoten {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10vh 0;
+  }
+}
+
+#parallax-divider-te-araroa {
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(225deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(to bottom, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), url(../img/backgrounds/te_araroa.jpg) fixed center center;
+  background-size: cover;
+  padding: 15vh 0;
+}
+
+@media (max-width: 769px) {
+  #parallax-divider-te-araroa {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10vh 0;
+  }
+}
+
+#parallax-divider-home {
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(225deg, rgba(253, 253, 251, 1.0), rgba(253, 253, 251, 0.0)), linear-gradient(to bottom, rgba(253, 253, 251, 1.0), rgba(32, 32, 32, 0.0)), url(../img/backgrounds/home.jpg) fixed center center;
+  background-size: cover;
+  padding: 20vh 0;
+}
+
+@media (max-width: 768px) {
+  #parallax-divider-home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10vh 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: rgb(56, 60, 79);
+  /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
+  padding: 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .credits {
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .footer-links a {
+  /* padding-left: 15px; */
+}
+
+#footer .footer-links a:first-child {
+  /* padding-left: 0; */
+}

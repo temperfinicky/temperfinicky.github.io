@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Temper & Finicky</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/icons/favicon.png" rel="icon">
+  <link href="img/icons/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Preloader (CSS, js, top background image)-->
+  <link href="img/backgrounds/intro.jpg" rel="preload" as="image">
+  <link href="lib/animate/animate.min.css" rel="preload" as="style">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="preload" as="style">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="preload" as="style">
+  <link href="lib/leaflet/leaflet.css" rel="preload" as="style">
+  <link href="lib/leaflet/leaflet-numbered-markers.css" rel="preload" as="style">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="preload" as="style">
+  <link href="css/style.css" rel="preload" as="style">
+  <link href="lib/echo/echo.min.js" rel="preload" as="script">
+  <link href="lib/jquery/jquery.min.js" rel="preload" as="script">
+  <link href="lib/jquery/jquery-migrate.min.js" rel="preload" as="script">
+  <link href="lib/bootstrap/js/bootstrap.bundle.min.js" rel="preload" as="script">
+  <link href="lib/easing/easing.min.js" rel="preload" as="script">
+  <link href="lib/magnific-popup/magnific-popup.min.js" rel="preload" as="script">
+  <link href="lib/wow/wow.min.js" rel="preload" as="script">
+  <link href="js/main.js" rel="preload" as="script">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/leaflet/leaflet.css" rel="stylesheet">
+  <link href="lib/leaflet/leaflet-numbered-markers.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <!-- pre-fetch background image (for browsers that do not support preload in the header) -->
+    <img style="display: none;" src="img/backgrounds/intro.jpg" alt="">
+
+    <div class="intro-text">
+      <h2><b>Temper</b> & Finicky</h2>
+      <div class="wow fadeIn" data-wow-delay="3.5s" data-wow-duration="0.5s">
+        <p>
+          <h3>vs the World</h3></p>
+      </div>
+    </div>
+
+    <div class="protagonists">
+
+      <div class="temper wow fadeInUpBig" data-wow-delay="2.5s" data-wow-duration="1.0s">
+        <img src="img/characters/temper_sitting.png" width="190" alt="">
+      </div>
+
+      <div class="finicky wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="0.5s">
+        <img src="img/characters/finicky_sitting.png" width="115" alt="">
+      </div>
+
+      <div class="fire wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.5s">
+        <img src="img/characters/fire.png" width="110" alt="">
+      </div>
+
+      <div class="tent wow fadeIn" data-wow-delay="0.0s" data-wow-duration="0.0s">
+        <img src="img/characters/tent.png" width="300" alt="">
+      </div>
+
+      <div class="intro-nav">
+        <a href="#main" class="btn-get-started scrollto">
+          <img src="img/arrow-down.svg" height="32" alt="Arrow" />
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Te Araroa Section
+    ============================-->
+    <section id="te-araroa" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Te Araroa</h3>
+          <p class="section-description">
+            Te Araroa (The Long Pathway) is New Zealand's long distance tramping route, stretching roughly 3000 km along the length of the country's two main islands from Cape Reinga to Bluff. It is made up of a mixture of older tracks and walkways, new tracks
+            and link sections alongside roads. Tramping the full length of the trail generally takes three to six months <a target="_blank" rel="noopener noreferrer" href=https://en.wikipedia.org/wiki/Te_Araroa_Trail>&#x21B3; Wikipedia</a>.
+          </p>
+          <p class="section-description">
+            Between October 2018 and March 2019 we will be attempting a south-bound through-walk. Below we will gradually share some of our best (and worst?) experiences along the trail. For more frequent updates you can also find us on Twitter <a target="_blank" rel="noopener noreferrer" href=https://twitter.com/temperfinicky>&#x21B3; @temperfinicky</a>. See ya!
+          </p>
+          <p class="section-stats">
+            <i class="fa fa-arrow-circle-o-right"></i> 3041 km &emsp; &emsp; &emsp; <i class="fa fa-arrow-circle-o-up"></i> 120 km &emsp; &emsp; &emsp; <i class="fa fa-clock-o"></i> 120 days
+          </p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="te-araroa-map" id="map-te-araroa" style="border-top-left-radius: 3px; border-top-right-radius: 3px;">
+              <div class="te-araroa-map-overlay"></div>
+            </div>
+          </div>
+          <p></p>
+        </div>
+
+        <!--
+        <div class="section-header">
+          <p class="section-description"> </p>
+          <h4 class="section-title">Northland Section</h4>
+          <p class="section-description">
+            The Northland section begins at Cape Reinga at the northern end of New Zealand's North Island. The Far North is a remote region with long, lonely stretches of sand facing the Tasman Sea and forests of dense bush, steep hills and fast-rising rivers. The trail includes everything from cruisey beach walks to rigorous back country hikes <a target="_blank" rel="noopener noreferrer" href=https://www.teararoa.org.nz/northland/>&#x21B3; Te Araroa Trust</a>.
+          </p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="https://dummyimage.com/640x480/fff/aaa" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="https://dummyimage.com/640x480/fff/aaa" alt="" style="height: 33vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="https://dummyimage.com/640x480/ddd/555" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="https://dummyimage.com/640x480/ddd/555" alt="" style="height: 33vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="gallery-item wow fadeInUp">
+              <a href="https://dummyimage.com/640x480/ddd/555" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="https://dummyimage.com/640x480/ddd/555" alt="" style="height: 50vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="gallery-item wow fadeInUp">
+              <a href="https://dummyimage.com/640x480/fff/aaa" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="https://dummyimage.com/640x480/fff/aaa" alt="" style="height: 50vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+        </div>
+        -->
+
+      </div>
+    </section>
+    <!-- #te-araroa -->
+
+    <!--==========================
+      Parallax Divider
+    ============================-->
+    <section id="parallax-divider-te-araroa">
+    </section>
+    <!-- #parallax-divider -->
+
+    <!--==========================
+      Lofoten Section
+    ============================-->
+    <section id="lofoten" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Lofoten</h3>
+          <p class="section-description">
+            Lofoten is an archipelago and a traditional district in the county of Nordland, Norway. It is known for a distinctive scenery with dramatic mountains and peaks, open sea and sheltered bays, beaches and untouched lands. Though lying within the Arctic Circle,
+            the archipelago experiences one of the world's largest elevated temperature anomalies relative to its high latitude <a target="_blank" rel="noopener noreferrer" href=https://en.wikipedia.org/wiki/Lofoten>&#x21B3; Wikipedia</a>.
+          </p>
+          <p class="section-description">
+            In early June 2018 we attempted a 10-day south-bound trek — losely following the route described <a target="_blank" rel="noopener noreferrer" href=https://www.rando-lofoten.net/en/the-long-crossing-from-north-to-south-on-the-lofoten-islands>&#x21B3; here</a>.
+          </p>
+          <p class="section-description">
+            After a historically snowy winter our travel window proved to be a tad bit early. It was the pronounced rainfalls and thunderstorms almost throughout our visit, however, that forced us to deviate from our planned route twice (once due to snowfields and a developing storm at 440m elevation north of Svolvær, and another time due to a knee-deep flooded plains east of Leknes).
+          </p>
+          <p class="section-description">
+            While the weather conditions did bring us to our mental limits occasionally (hey, as long as the sleeping bag stays dry! Right?), they only served to further attenuate the harsh, ragged beauty of the Lofoten landscape. A beauty one needs to experience with all of ones senses, and which photopraphs only inadequately capture. We’ll certainly be back!
+          </p>
+          <p class="section-description">
+            On an unrelated closing note: in case you ever thought about signing up for the <a target="_blank" rel="noopener noreferrer" href=http://www.thearctictriple.no/lofoten-ultratrail/>&#x21B3; Arctic Triple ultra trail</a> (because, you know, other 100 mile runs are for #?%!), don’t do it. Just don’t. Please?
+          </p>
+          <p class="section-stats">
+            <i class="fa fa-arrow-circle-o-right"></i> 130 km &emsp; &emsp; &emsp; <i class="fa fa-arrow-circle-o-up"></i> 7.6 km &emsp; &emsp; &emsp; <i class="fa fa-clock-o"></i> 9 days
+          </p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="lofoten-map" id="map-lofoten" style="border-top-left-radius: 3px; border-top-right-radius: 3px;">
+              <div class="lofoten-map-overlay"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/2_1.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/2_1.jpg" alt="" style="height: 33vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/2_2.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/2_2.jpg" alt="" style="height: 33vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/6_2.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/6_2.jpg" alt="" style="height: 50vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/2_3.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/2_3.jpg" alt="" style="height: 50vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-7">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/7_1.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/7_1.jpg" alt="" style="height: 40vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/5_1.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/5_1.jpg" alt="Some text" style="height: 40vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/10_2.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/10_2_right.jpg" alt="" style="height: 50vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-9">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/galleries/lofoten/large/9_3.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/9_3.jpg" alt="" style="height: 50vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="gallery-item wow fadeInUp" style="border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+              <a href="img/galleries/lofoten/large/10_1.jpg" class="gallery-popup" title="" text="">
+                <img src="img/blank.gif" data-echo="img/galleries/lofoten/small/10_1.jpg" style="height: 33vh; object-fit: cover;">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- #lofoten -->
+
+    <!--==========================
+      Parallax Divider
+    ============================-->
+    <section id="parallax-divider-lofoten">
+    </section>
+    <!-- #parallax-divider -->
+
+    <!--==========================
+      Home Section
+    ============================-->
+    <section id="home" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Temper & Finicky</h3>
+          <p class="section-description">
+            Wie jede Blüte welkt<br>
+            und jede Jugend dem Alter weicht,<br>
+            blüht jede Lebensstufe,<br>
+            blüht jede Weisheit auch und jede Tugend<br>
+            zu ihrer Zeit und darf nicht ewig dauern.
+          </p>
+          <p class="section-description">
+            Es muss das Herz bei jedem Lebensrufe<br>
+            bereit zum Abschied sein und Neubeginne,<br>
+            um sich in Tapferkeit und ohne Trauern<br>
+            in and're, neue Bindungen zu geben.
+          </p>
+          <p class="section-description">
+            Und jedem Anfang wohnt ein Zauber inne,<br>
+            der uns beschützt und der uns hilft zu leben.
+          </p>
+          <p class="section-description">
+            <a target="_blank" rel="noopener noreferrer" href=https://de.wikipedia.org/wiki/Stufen>&#x21B3; Stufen &#8212; Hermann Hesse</a> <br>
+            <a target="_blank" rel="noopener noreferrer" href=https://www.smbc-comics.com/comics/20120902.gif>&#x21B3; SMBC comic interpretation for the millennials among you </a>
+          </p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="home-map" id="map-home" style="border-radius: 3px;">
+              <div class="home-map-overlay"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- #home -->
+
+    <!--==========================
+      Parallax Divider
+    ============================-->
+    <section id="parallax-divider-home">
+    </section>
+    <!-- #parallax-divider -->
+
+    <!--==========================
+    Footer
+    ============================-->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="copyright">
+              Copyright &copy; 2018 Temper & Finicky. All Rights Reserved.
+            </div>
+            <div class="credits">
+              Designed by <a target="_blank" rel="noopener noreferrer" href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/echo/echo.js"></script>
+    <!--<script src="lib/echo/echo.min.js"></script> --> <!-- modified image preload behavior, hence do not load default release's minified version -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="lib/leaflet/leaflet.js"></script>
+    <!-- <script src="lib/leaflet/esri-leaflet.js"></script> -->
+    <script src="lib/leaflet/leaflet-numbered-markers.js"></script>
+
+
+    <!-- JavaScript Custom Data Handling -->
+    <script src="js/leaflet-te-araroa-map.js"></script>
+    <script src="js/leaflet-lofoten-map.js"></script>
+    <script src="js/leaflet-home-map.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
