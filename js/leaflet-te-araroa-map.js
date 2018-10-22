@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
   var mapName = 'map-te-araroa';
   var mapCenter = [-36.848461, 174.763336]; //auckland
   // var mapCenter = [-41.28664, 174.77557]; //wellington
-  var presentLocation = [-34.428788, 172.681003]; //cape reinga
+  var presentLocation = [-35.7251, 174.3237]; //whangarei
+  // var presentLocation = [-34.428788, 172.681003]; //cape reinga
   var mapZoom = 6;
   var mapMinZoom = 4;
   var mapMaxZoom = 12;
