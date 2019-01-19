@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
   var mapName = 'map-te-araroa';
   var mapCenter = [-36.848461, 174.763336]; //auckland
   
-  var presentLocation = [-41.28664, 174.77557]; //wellington
+  var presentLocation = [-44.7032, 169.1321]; //wanaka
+  // var presentLocation = [-41.28664, 174.77557]; //wellington
   // var presentLocation = [-39.9301, 175.0479]; //whanganui
   // var presentLocation = [-38.8832, 175.2607]; //taumarunui
   // var presentLocation = [-37.7870, 175.2793]; //hamilton
